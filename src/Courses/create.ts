@@ -11,10 +11,10 @@ async function main() {
             teacher: {
                 connectOrCreate: {
                     where: {
-                        email: 'viola@prisma.io',
+                        name: 'Fulano',
                     },
                     create: {
-                        name: 'Viola',
+                        name: 'Fulano',
                     },
                 },
             },
