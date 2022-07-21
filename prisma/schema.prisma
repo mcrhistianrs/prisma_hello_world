@@ -15,7 +15,7 @@ model Courses {
   created_at    DateTime       @default(now())
   teacher       Teachers       @relation(fields: [fk_id_teacher], references: [id])
   fk_id_teacher String         @unique @default("")
-  CoursesModel  CoursesModel[]
+  modules       CoursesModel[]
 
   @@map("courses")
 }
