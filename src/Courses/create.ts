@@ -6,15 +6,15 @@ async function main() {
     const result = await prisma.courses.create({
         data: {
             duration: 200,
-            name: "Curso de Node",
+            name: "Curso de Testes",
             description: "Muito bom",
             teacher: {
                 connectOrCreate: {
                     where: {
-                        name: 'Fulano',
+                        name: 'Manguinhos',
                     },
                     create: {
-                        name: 'Fulano',
+                        name: 'Manguinhos',
                     },
                 },
             },
